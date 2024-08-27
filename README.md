@@ -15,5 +15,11 @@ A tool to transform your device in a "jailbraker" for iDevices!
 - Now run the script using `sudo ./install-picheckra.sh`
 - If you still get permission errors, try chowning the file to your username using `chown (your username) install-picheckra.sh`
 
+## How does it work
+1. The script updates package manager's repos and fetches new packages or modified ones
+2. The script clones required libraries' repos and builds them
+3. The script fetches checkra1n from checkra.in
+4. The scripts create a startup script that will be executed on startup by a service handled by systemd that goes by the name of pi-checkra.service
+   
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/KamikazeVerde/Pi-Checkra/blob/master/LICENSE.txt
