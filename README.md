@@ -1,7 +1,15 @@
 # Pi-Checkra
 
+A tool to transform your device in a "jailbraker" for iDevices!
+
 ## Requirements:
 - arm64 device (es. Pi5)
-- fresh installation of libirecovery, libimobiledevice-glue and libiplist (gonna add auto install later in the script)
+- debian / ubuntu (also based es. Raspberry Pi OS)
+- working internet connection (required only for setup)
 
-A script that transforms your arm64 device in an automated device to jailbreak iDevices at connection using checkra1n.
+## Usage:
+Clone the repository using 'https://github.com/KamikazeVerde/Pi-Checkra.git'
+Then (if needed) give permissions to the file using 'chmod +x install-picheckra.sh'
+Now run the script using 'sudo ./install-picheckra.sh'
+If you still get permission errors, try chowning the file to your username using 'chown (your username) install-picheckra.sh'
+
