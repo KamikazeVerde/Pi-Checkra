@@ -1,3 +1,5 @@
+[![MIT License][license-shield]][license-url]
+
 # Pi-Checkra
 
 A tool to transform your device in a "jailbraker" for iDevices!
