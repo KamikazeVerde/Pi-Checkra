@@ -22,6 +22,7 @@ cat << EOF
 
 EOF
 
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 apt update
 apt upgrade -y
 apt install -y git usbmuxd libimobiledevice6 libimobiledevice-utils \
@@ -29,6 +30,25 @@ build-essential checkinstall git autoconf automake libtool-bin libreadline-dev \
 libusb-1.0-0-dev libusbmuxd-tools sshpass
 mkdir /pi-checkra
 cd /pi-checkra
+git clone https://github.com/libimobiledevice/libplist.git
+cd libplist
+./autogen.sh
+sudo make
+sudo make install
+sudo ldconfig
+cd ..
+git clone https://github.com/libimobiledevice/libimobiledevice-glue
+cd libimobiledevice-glue
+./autogen.sh
+sudo make
+sudo make install
+cd ..
+git clone https://github.com/libimobiledevice/libirecovery
+cd libirecovery
+./autogen.sh
+sudo make
+sudo make install
+cd ..
 wget https://assets.checkra.in/downloads/linux/cli/arm64/43019a573ab1c866fe88edb1f2dd5bb38b0caf135533ee0d6e3ed720256b89d0/checkra1n
 chmod +x checkra1n
 touch /start-picheckra.sh
@@ -64,3 +84,5 @@ EOF
 systemctl daemon-reload
 systemctl enable pi-checkra.service
 systemctl start pi-checkra.service
+clear
+echo 'The installation is now finished! Please reboot the device using "sudo reboot now" to apply changes.'
