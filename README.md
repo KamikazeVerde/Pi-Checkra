@@ -33,5 +33,8 @@ To make the script work on other distros you need to setup a workaround by editi
 For first, edit the package manager name, for example if you want to run the script on Arch Linux, you'll need to replace `apt install` with `pacman -S`. After doing this, to make checkra1n work on your CPU's architecture, just go in the [checkra1n site](https://checkra.in) and copy the download link you need and replace it in the script, if you did everything correctly the script should now work on your distro/architecture!
 Also, feel free to make forks for other distros and architectures!
 
+## Warning
+#### USE THIS SOFTWARE AT YOUR OWN RISK AND ONLY FOR EDUCATIONAL PURPOSES.
+
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/KamikazeVerde/Pi-Checkra/blob/master/LICENSE.txt
