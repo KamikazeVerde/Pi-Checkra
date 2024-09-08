@@ -32,6 +32,7 @@ mkdir /pi-checkra
 cd /pi-checkra
 git clone https://github.com/libimobiledevice/libplist.git
 cd libplist
+chmod +x autogen.sh
 ./autogen.sh
 sudo make
 sudo make install
@@ -39,12 +40,14 @@ sudo ldconfig
 cd ..
 git clone https://github.com/libimobiledevice/libimobiledevice-glue
 cd libimobiledevice-glue
+chmod +x autogen.sh
 ./autogen.sh
 sudo make
 sudo make install
 cd ..
 git clone https://github.com/libimobiledevice/libirecovery
 cd libirecovery
+chmod +x autogen.sh
 ./autogen.sh
 sudo make
 sudo make install
