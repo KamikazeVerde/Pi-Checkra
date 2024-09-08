@@ -30,7 +30,7 @@ This means that you can't execute the script on the current distro. There is a w
 ## Other architecture/distro workaround
 #### This is not raccomdended!
 To make the script work on other distros you need to setup a workaround by editing the script.
-For first, edit the package manager name, for example if you want to run the script on Arch Linux, you'll need to replace `apt install` with `pacman -S`. After doing this, to make checkra1n work on your CPU's architecture, just go in the [checkra1n site](https://checkra.in) and copy the download link you need and replace it in the script, if you did everything correctly the script should now work on your distro/architecture!
+For first, edit the package manager name, for example if you want to run the script on Arch Linux, you'll need to replace `apt install` with `pacman -S`. Then, remove the distribution check. After doing this, to make checkra1n work on your CPU's architecture, just go in the [checkra1n site](https://checkra.in) and copy the download link you need and replace it in the script, if you did everything correctly the script should now work on your distro/architecture!
 Also, feel free to make forks for other distros and architectures!
 
 ## Warning
